@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mocha Test Runner</title>
+    <link rel="stylesheet" href="../bower_components/mocha/mocha.css">
+
+</head>
+<body>
+
+    <div id="mocha"></div>
+
+
+    <!-- Dependencies -->
+    <script src="../bower_components/underscore/underscore-min.js"></script>
+
+    <!-- What we are testing -->
+    <script src="../js/song-filters.js"></script>
+
+    <!-- BDD Scripts -->
+    <script src="../bower_components/mocha/mocha.js"></script>
+    <script src="../bower_components/chai/chai.js"></script>
+
+    <!-- Tell mocha we are doing BDD style -->
+    <script>mocha.setup("bdd");</script>
+
+    <!-- Include our test scripts -->
+    <script src="test.song-filters.js"></script>
+
+    <!-- Let's kick it -->
+    <script>
+        var expect = chai.expect;
+        mocha.checkLeaks(); // checks for global variables
+        mocha.globals(["_"]); // globals that are ok in our code
+        mocha.run();
+
+
+    </script>
+    
+</body>
+</html>
