@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Exo+2:400,300);
 .accordions {
   margin: 0 auto;
   max-width: 60em;
@@ -8,13 +9,20 @@
 .accordion .accordion-header {
   background-color: #314a4c;
   color: white;
+  cursor: pointer;
+  font-family: "Exo", sans-serif;
+  font-size: 1.2em;
   padding: 1em;
 }
 .accordion .accordion-body {
-  border: 1px solid #9baaab;
+  background-color: #d2d9da;
+  border: 1px solid #1d2c2d;
   color: #314a4c;
+  font-family: "Exo", sans-serif;
+  font-size: 1.1em;
+  font-weight: 300;
   line-height: 1.5;
-  max-height: 150em;
+  max-height: 110px;
   overflow: hidden;
   transition: all 0.5s ease-in;
 }
@@ -23,5 +31,5 @@
 }
 .closed .accordion-body {
   max-height: 0;
-  transition: all 2s ease-in;
+  transition: all 0.5s ease-in;
 }
