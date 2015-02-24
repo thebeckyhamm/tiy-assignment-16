@@ -1,0 +1,27 @@
+.accordions {
+  margin: 0 auto;
+  max-width: 60em;
+}
+.accordion {
+  background-color: white;
+}
+.accordion .accordion-header {
+  background-color: #314a4c;
+  color: white;
+  padding: 1em;
+}
+.accordion .accordion-body {
+  border: 1px solid #9baaab;
+  color: #314a4c;
+  line-height: 1.5;
+  max-height: 150em;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+}
+.accordion .accordion-body .inner-body {
+  padding: 1em;
+}
+.closed .accordion-body {
+  max-height: 0;
+  transition: all 2s ease-in;
+}

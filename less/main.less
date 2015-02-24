@@ -1,0 +1,35 @@
+@dark: #314A4C;
+@gray: #9BAAAB;
+
+
+
+.accordions {
+    margin: 0 auto;
+    max-width: 60em;
+}
+
+.accordion {
+    background-color: white;
+    .accordion-header {
+        background-color: @dark;
+        color: white;
+        padding: 1em;
+    }
+    .accordion-body {
+        border: 1px solid @gray;
+        color: @dark;
+        line-height: 1.5;
+        max-height: 150em;
+        overflow: hidden;
+        transition: all .5s ease-in;
+        .inner-body {
+            padding: 1em;
+        }
+    }
+}
+
+.closed .accordion-body{
+    max-height: 0;
+    transition: all 2s ease-in;
+
+}
