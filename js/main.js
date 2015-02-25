@@ -1,11 +1,7 @@
-
-
-
-
 $(function() {
 
     var getData = (function(data) {
-        $.ajax("../accordions.json", {
+        $.ajax("accordions.json", {
             success: function(data) {
                 buildAccordions(data);
             }
